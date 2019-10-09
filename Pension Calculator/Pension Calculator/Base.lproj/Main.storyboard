@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JN5-Tm-nKH">
+    <device id="ipad12_9rounded" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CalculateVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CalculateVC" customModule="Pension_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 Highest Annual Salaries ($)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFf-40-fAh">
+                                <rect key="frame" x="0.0" y="89" width="1024" height="38"/>
+                                <color key="backgroundColor" red="1" green="0.56623847989788634" blue="0.50130764610123135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="6Xi-FG-V9r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Years of Employment (yr, mo)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H71-6N-WGu">
+                                <rect key="frame" x="0.0" y="316" width="1024" height="38"/>
+                                <color key="backgroundColor" red="1" green="0.56623847989999998" blue="0.5013076461" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="pfU-tJ-Ltt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Percentage Factor (%)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTj-UI-RPo">
+                                <rect key="frame" x="0.0" y="217" width="1024" height="38"/>
+                                <color key="backgroundColor" red="1" green="0.56623847989999998" blue="0.5013076461" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="DfP-ck-ffL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4b-ko-hTL">
+                                <rect key="frame" x="993" y="225" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="HDr-sJ-NjM"/>
+                                    <constraint firstAttribute="width" constant="22" id="rmH-ss-BdQ"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="PercentageFactor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="umr-Xq-SIM"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Months" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fVD-Sy-S3O">
+                                <rect key="frame" x="847" y="369" width="140" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="980-W8-Gyg"/>
+                                    <constraint firstAttribute="height" constant="32" id="Ib3-1C-TvS"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter %" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gsi-iG-IHh">
+                                <rect key="frame" x="130" y="269" width="764" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="9lX-k8-Ur1"/>
+                                    <constraint firstAttribute="width" constant="154" id="fjI-s6-EaD"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKa-0r-FiG">
+                                <rect key="frame" x="993" y="323" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="CzU-9d-hzY"/>
+                                    <constraint firstAttribute="height" constant="22" id="jDQ-eO-w1g"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="Years:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dZm-mm-CDK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$/Month" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5V-CM-3Az">
+                                <rect key="frame" x="0.0" y="594" width="1024" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="w9u-Wl-SP1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="35"/>
+                                <color key="textColor" red="1" green="0.4437606482" blue="0.53872745600000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wi0-51-bsN">
+                                <rect key="frame" x="0.0" y="575" width="1024" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="paN-pz-qGg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculated Pension" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lf-um-1Pu">
+                                <rect key="frame" x="0.0" y="493" width="1024" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="nSq-s2-1el"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycl-3y-m7U">
+                                <rect key="frame" x="98" y="422" width="828" height="50"/>
+                                <color key="backgroundColor" red="0.80460209362469626" green="0.50403080191396488" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9FX-02-N6f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="Calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hfp-BV-3TM"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Salary 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="99J-ju-gav">
+                                <rect key="frame" x="15" y="135" width="150" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="GOb-wu-USz"/>
+                                    <constraint firstAttribute="height" constant="32" id="yAb-av-iAW"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Salary 3" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w6E-DR-k4w">
+                                <rect key="frame" x="125" y="177" width="774" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="j7e-U6-93I"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Years" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OMH-Sh-B5Q">
+                                <rect key="frame" x="37" y="369" width="140" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="0Yn-mp-sna"/>
+                                    <constraint firstAttribute="width" constant="140" id="Bbq-l8-zhR"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$/Year" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHy-qh-yvd">
+                                <rect key="frame" x="0.0" y="540" width="1024" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="bhY-xM-3Rf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="35"/>
+                                <color key="textColor" red="1" green="0.4437606482" blue="0.53872745600000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Salary 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zo4-xs-nGB">
+                                <rect key="frame" x="859" y="135" width="150" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="f9x-TX-EfU"/>
+                                    <constraint firstAttribute="width" constant="150" id="r5w-Kl-8yR"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMw-HY-pC5">
+                                <rect key="frame" x="993" y="97" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="C3B-f9-KCL"/>
+                                    <constraint firstAttribute="width" constant="22" id="QzA-Wm-ipD"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="Salary:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A5a-zh-0d5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73421457113738209" green="1" blue="0.79349695955301258" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="h4b-ko-hTL" firstAttribute="top" secondItem="Zo4-xs-nGB" secondAttribute="bottom" constant="58" id="1pt-WA-oum"/>
+                            <constraint firstItem="c5V-CM-3Az" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="30N-b7-YDW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w6E-DR-k4w" secondAttribute="trailing" constant="125" id="3xL-oJ-eLS"/>
+                            <constraint firstItem="OMH-Sh-B5Q" firstAttribute="top" secondItem="H71-6N-WGu" secondAttribute="bottom" constant="15" id="6gI-BU-Tuk"/>
+                            <constraint firstItem="xHy-qh-yvd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9s4-wU-bxG"/>
+                            <constraint firstItem="H71-6N-WGu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="A2l-Mc-VBV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zo4-xs-nGB" secondAttribute="trailing" constant="15" id="AYX-Os-wnp"/>
+                            <constraint firstItem="99J-ju-gav" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Afj-NN-TjL"/>
+                            <constraint firstItem="c5V-CM-3Az" firstAttribute="top" secondItem="xHy-qh-yvd" secondAttribute="bottom" constant="18" id="BUx-Uq-tRy"/>
+                            <constraint firstItem="ycl-3y-m7U" firstAttribute="top" secondItem="fVD-Sy-S3O" secondAttribute="bottom" constant="21" id="D2m-fx-ljW"/>
+                            <constraint firstItem="99J-ju-gav" firstAttribute="top" secondItem="pFf-40-fAh" secondAttribute="bottom" constant="8" id="DfX-W2-MBg"/>
+                            <constraint firstItem="pFf-40-fAh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FsH-eM-sh0"/>
+                            <constraint firstItem="fVD-Sy-S3O" firstAttribute="top" secondItem="H71-6N-WGu" secondAttribute="bottom" constant="15" id="HS8-1n-SC1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gsi-iG-IHh" secondAttribute="trailing" constant="130" id="LNH-EC-upB"/>
+                            <constraint firstItem="c5V-CM-3Az" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MP1-no-WnK"/>
+                            <constraint firstItem="pFf-40-fAh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MvO-al-ZTr"/>
+                            <constraint firstItem="H71-6N-WGu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="P0m-Kc-QM2"/>
+                            <constraint firstItem="0lf-um-1Pu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QI8-fs-MAD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h4b-ko-hTL" secondAttribute="trailing" constant="9" id="RGJ-hu-d5d"/>
+                            <constraint firstItem="xHy-qh-yvd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Scg-G8-YMf"/>
+                            <constraint firstItem="0lf-um-1Pu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Sht-o6-mm0"/>
+                            <constraint firstItem="Wi0-51-bsN" firstAttribute="top" secondItem="0lf-um-1Pu" secondAttribute="bottom" constant="51" id="TUc-B3-TRh"/>
+                            <constraint firstItem="w6E-DR-k4w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="125" id="UIM-Lk-ke9"/>
+                            <constraint firstItem="mTj-UI-RPo" firstAttribute="top" secondItem="w6E-DR-k4w" secondAttribute="bottom" constant="8" id="Ums-GP-Jys"/>
+                            <constraint firstItem="ycl-3y-m7U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="98" id="YAy-Pp-Kl4"/>
+                            <constraint firstItem="Wi0-51-bsN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="abc-MZ-6O2"/>
+                            <constraint firstItem="0lf-um-1Pu" firstAttribute="top" secondItem="ycl-3y-m7U" secondAttribute="bottom" constant="21" id="bd9-xN-vBR"/>
+                            <constraint firstItem="OMH-Sh-B5Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="dR3-4t-zA2"/>
+                            <constraint firstItem="pFf-40-fAh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="dXl-Sw-fpP"/>
+                            <constraint firstItem="hKa-0r-FiG" firstAttribute="top" secondItem="mTj-UI-RPo" secondAttribute="bottom" constant="68" id="eFT-zj-NRR"/>
+                            <constraint firstItem="mTj-UI-RPo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f0Q-Cb-gY7"/>
+                            <constraint firstItem="gsi-iG-IHh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="gqd-FQ-hSb"/>
+                            <constraint firstItem="gsi-iG-IHh" firstAttribute="top" secondItem="mTj-UI-RPo" secondAttribute="bottom" constant="14" id="grl-Ua-acL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ycl-3y-m7U" secondAttribute="trailing" constant="98" id="hEI-ef-FxD"/>
+                            <constraint firstItem="mTj-UI-RPo" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jb3-7p-JOM"/>
+                            <constraint firstItem="Zo4-xs-nGB" firstAttribute="top" secondItem="pFf-40-fAh" secondAttribute="bottom" constant="8" id="lGe-3e-lYr"/>
+                            <constraint firstItem="w6E-DR-k4w" firstAttribute="top" secondItem="99J-ju-gav" secondAttribute="bottom" constant="10" id="oSA-84-WUs"/>
+                            <constraint firstItem="xMw-HY-pC5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="ov0-MF-xn8"/>
+                            <constraint firstItem="Wi0-51-bsN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pH2-JX-o7V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xMw-HY-pC5" secondAttribute="trailing" constant="9" id="tGH-vQ-X6w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hKa-0r-FiG" secondAttribute="trailing" constant="9" id="wbf-6Q-mCi"/>
+                            <constraint firstItem="H71-6N-WGu" firstAttribute="top" secondItem="gsi-iG-IHh" secondAttribute="bottom" constant="15" id="zFO-0r-ORd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fVD-Sy-S3O" secondAttribute="trailing" constant="37" id="zMk-mY-doA"/>
+                            <constraint firstItem="xHy-qh-yvd" firstAttribute="top" secondItem="0lf-um-1Pu" secondAttribute="bottom" constant="16" id="zbK-82-Jw6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SZA-kJ-6gr">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="refresh" id="GRc-Pt-ogc">
+                            <connections>
+                                <action selector="Reset:" destination="BYZ-38-t0r" id="2Dr-jQ-edS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="Month" destination="fVD-Sy-S3O" id="PAy-Gl-pr6"/>
+                        <outlet property="MonthLabel" destination="c5V-CM-3Az" id="5Ex-GZ-Npm"/>
+                        <outlet property="OrLabel" destination="Wi0-51-bsN" id="32J-q9-3MZ"/>
+                        <outlet property="PensionLabel" destination="0lf-um-1Pu" id="Tlf-yt-Nu9"/>
+                        <outlet property="Percentage" destination="gsi-iG-IHh" id="Jex-3F-wHJ"/>
+                        <outlet property="SalaryOne" destination="99J-ju-gav" id="aKs-7v-hd1"/>
+                        <outlet property="SalaryThree" destination="w6E-DR-k4w" id="MSL-Cv-XDJ"/>
+                        <outlet property="SalaryTwo" destination="Zo4-xs-nGB" id="W9w-Y7-gE2"/>
+                        <outlet property="Year" destination="OMH-Sh-B5Q" id="B7o-Dr-0zF"/>
+                        <outlet property="YearLabel" destination="xHy-qh-yvd" id="sIw-cc-PcM"/>
+                        <segue destination="WCK-TU-Ddj" kind="show" identifier="info" id="Qid-18-iTQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="109.82142857142857"/>
+        </scene>
+        <!--InfoVC-->
+        <scene sceneID="IDt-eT-JTZ">
+            <objects>
+                <viewController id="WCK-TU-Ddj" customClass="InfoVC" customModule="Pension_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Ug-Pf-ayD">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8zL-9O-Zb6">
+                                <rect key="frame" x="31" y="105" width="962" height="1217"/>
+                                <color key="backgroundColor" red="0.73421457109999999" green="1" blue="0.7934969596" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73421457109999999" green="1" blue="0.7934969596" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8zL-9O-Zb6" firstAttribute="leading" secondItem="R63-7n-Pnv" secondAttribute="leading" constant="31" id="OVM-Hd-U4C"/>
+                            <constraint firstItem="R63-7n-Pnv" firstAttribute="trailing" secondItem="8zL-9O-Zb6" secondAttribute="trailing" constant="31" id="plh-QP-JaT"/>
+                            <constraint firstItem="8zL-9O-Zb6" firstAttribute="top" secondItem="R63-7n-Pnv" secondAttribute="top" constant="31" id="qKz-nL-OQG"/>
+                            <constraint firstItem="R63-7n-Pnv" firstAttribute="bottom" secondItem="8zL-9O-Zb6" secondAttribute="bottom" constant="24" id="zzg-bi-fC5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="R63-7n-Pnv"/>
+                    </view>
+                    <connections>
+                        <outlet property="InfoText" destination="8zL-9O-Zb6" id="UDa-sh-lSw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IEd-4i-eKk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1902.8985507246377" y="109.82142857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Rcv-BD-dBH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JN5-Tm-nKH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LVZ-ed-Qlk">
+                        <rect key="frame" x="0.0" y="24" width="1024" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="0.4437606482" blue="0.53872745600000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ik9-qJ-3Pm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pYW-jw-yu9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="110.49107142857143"/>
+        </scene>
+    </scenes>
+</document>
